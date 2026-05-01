@@ -1,13 +1,13 @@
 # Bug 02 - Exclusão em cascata não configurada explicitamente
 
 ## O que é o problema
-A regra de negócio diz que ao excluir uma Pessoa, todas as suas transações
+a regra de negócio diz que ao excluir uma Pessoa, todas as suas transações
 devem ser excluídas junto (exclusão em cascata).
 
 ## Onde está o problema
 Arquivo: `api/MinhasFinancas.Infrastructure/Data/MinhasFinancasDbContext.cs`
 
-O relacionamento entre Pessoa e Transacao não tem o comportamento de cascade
+O relacionamento entre pessoa e transacao não tem o comportamento de cascade
 delete configurado explicitamente.
 
 ## Risco

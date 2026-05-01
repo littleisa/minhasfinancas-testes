@@ -19,3 +19,14 @@ Arquivo: `api/nuget.config`
 ## Impacto
 Qualquer desenvolvedor que não tenha o Visual Studio instalado com os pacotes
 offline não consegue compilar o projeto sem ajustes manuais.
+
+## Atualização - Impacto maior do que o esperado
+
+Ao referenciar outros projetos da solução (Application e Infrastructure),
+o mesmo erro NU1301 aparece, confirmando que o problema afeta toda a solução
+e não apenas o projeto Domain.
+
+Projetos afetados:
+- MinhasFinancas.Domain
+- MinhasFinancas.Application
+- MinhasFinancas.Infrastructure
